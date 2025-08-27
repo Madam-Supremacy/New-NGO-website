@@ -196,6 +196,73 @@
             display: block;
         }
 
+        /* Founder Section */
+        .founder-section {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+            padding: 6rem 0;
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-image {
+            text-align: center;
+        }
+
+        .founder-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .founder-info {
+            padding: 2rem;
+        }
+
+        .founder-title {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-quote {
+            font-style: italic;
+            color: var(--dark-blue);
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.2rem;
+        }
+
+        .founder-social {
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--dark-blue);
+            transform: translateY(-3px);
+        }
+
         /* Programs Section */
         .programs-grid {
             display: grid;
@@ -420,8 +487,14 @@
             }
 
             .about-content,
-            .contact-container {
+            .contact-container,
+            .founder-content {
                 grid-template-columns: 1fr;
+            }
+
+            .founder-photo {
+                width: 250px;
+                height: 250px;
             }
 
             .btn-secondary {
@@ -469,6 +542,7 @@
                 <ul class="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#founder">Our Founder</a></li>
                     <li><a href="#programs">Programs</a></li>
                     <li><a href="#impact">Impact</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -506,7 +580,42 @@
                     <p>Hope For All is a non-profit organization dedicated to alleviating poverty and providing essential support to marginalized communities. We believe that every person deserves access to basic necessities, education, and opportunities for a better life.</p>
                     <p>Founded in 2010, we have been working tirelessly to create sustainable solutions that address the root causes of poverty and inequality. Our approach combines immediate relief with long-term development programs.</p>
                     <p>Through the generosity of our donors and the dedication of our volunteers, we've been able to touch thousands of lives and create meaningful change in communities across the globe.</p>
-                    <a href="#programs" class="btn">Learn About Our Programs</a>
+                    <a href="#founder" class="btn">Meet Our Founder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Founder</h2>
+                <p>The visionary behind Hope For All's mission</p>
+            </div>
+            <div class="founder-content">
+                <div class="founder-image animate">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8abbb53e-b606-4822-9556-b64ac09320a9.png" alt="Professional portrait of Sarah Johnson, founder of Hope For All, a compassionate woman in her 40s with warm smile and professional attire" class="founder-photo" />
+                    <h3>Sarah Johnson</h3>
+                    <p class="founder-title">Founder & Executive Director</p>
+                </div>
+                <div class="founder-info animate delay-1">
+                    <h3>A Passion For Making a Difference</h3>
+                    <p>Sarah Johnson founded Hope For All in 2010 with a simple yet powerful vision: to create a world where no one has to choose between basic necessities and dignity. Her journey began after witnessing firsthand the struggles of underprivileged communities during her humanitarian work in developing nations.</p>
+                    
+                    <p>With over 15 years of experience in social work and community development, Sarah brings a unique blend of compassion and strategic thinking to her role. Her academic background in Social Sciences and Public Policy from Harvard University, combined with her hands-on experience, has shaped Hope For All's innovative approach to poverty alleviation.</p>
+                    
+                    <div class="founder-quote">
+                        "I believe that every person deserves not just to survive, but to thrive. Our work isn't about charity - it's about restoring dignity, creating opportunities, and building communities where everyone can reach their full potential."
+                    </div>
+
+                    <p>Under Sarah's leadership, Hope For All has grown from a small local initiative to an internationally recognized organization reaching over 25 communities worldwide. Her dedication has been recognized with numerous awards, including the Global Humanitarian Award and the Social Innovation Prize.</p>
+
+                    <div class="founder-social">
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">✉️</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -659,6 +768,7 @@
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
+                        <li><a href="#founder">Our Founder</a></li>
                         <li><a href="#programs">Our Programs</a></li>
                         <li><a href="#impact">Our Impact</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -751,4 +861,5 @@
     </script>
 </body>
 </html>
+
 
